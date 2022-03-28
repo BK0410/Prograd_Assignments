@@ -6,4 +6,6 @@ public interface UserRepo extends JpaRepository<User, Long> {
 
 	User save(User user);
 
+	User findByEmail(String email);
+
 }
