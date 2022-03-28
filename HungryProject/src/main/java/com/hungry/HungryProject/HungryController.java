@@ -48,4 +48,8 @@ public class HungryController {
 			return "loginPage";
 		}
 	}
+	@GetMapping("/")
+	public String loggedOut() {
+		return "home";
+	}
 }
