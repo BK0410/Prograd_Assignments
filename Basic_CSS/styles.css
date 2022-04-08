@@ -1,0 +1,80 @@
+:root {
+  --bgColor: black;
+  --color: white;
+}
+body{
+  background-color:lavender;
+}
+.linear {
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(red, yellow);
+  }
+  .conical{
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(red, yellow, green);
+  }
+  .radial {
+    height: 200px;
+    width: 200px;
+    background-image: radial-gradient(red, yellow, green);
+  }
+  .repeatingLinear{
+    height: 200px;
+    width: 200px;
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+  }
+  .repeatingConic{
+    height: 200px;
+    width: 200px;
+    background-image: repeating-conic-gradient(red, yellow 10%, green 20%);
+  }
+  body {
+    counter-reset: myCounter;
+  }
+  h2::before {
+    counter-increment: myCounter;
+    content: "CSS Function " counter(myCounter) " - ";
+  } 
+ .var span{
+   background-color: var(--bgColor);
+   color: var(--color);
+ }
+ 
+ .form input{
+   border: 2px solid black;
+   height: 30px;
+   width: 150px;
+   padding: 8px;
+   border-radius: 10px;
+   border: 1.5px solid black;
+   background-color: lightgoldenrodyellow;
+ }
+ input:focus{
+   border: 3px solid black;
+ }
+ .form{
+  padding: 24px;
+  height: fit-content;
+  width: fit-content;
+  line-height: 4;
+  background-color: rgb(247, 173, 173);
+  border-radius: 20px;
+}
+.form button{
+  background-color: rgb(24, 24, 185);
+  color: white;
+  height: max-content;
+  width: max-content;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 2px solid blue;
+}
+.formOuter{
+  height: max-content;
+  width: 40%;
+  padding: 100px;
+  background-image: linear-gradient(lightyellow,lightyellow 50%,lightblue);
+  border-radius: 50px;
+}
