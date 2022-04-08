@@ -1,0 +1,15 @@
+@import "styles2";
+$color: lightgreen;
+@mixin colorFunction(){
+    background-color: $color;
+}
+.firstClass{
+    @include colorFunction()
+}
+.secondClass{
+    color: unquote(str-slice("lightblue",6,9));
+    line-height: str-length("HI");
+}
+.thirdClass{
+    background-color: $myColor;
+}
