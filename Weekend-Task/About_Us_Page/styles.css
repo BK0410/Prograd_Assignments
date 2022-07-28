@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+
+}
+
+.border {
+    line-height: 9.5px;
+}
+
+.top {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #5e6161;
+}
+
+.bottom {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background-color: #5e6161;
+}
+
+.left {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 100;
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+    background-color: #5e6161;
+}
+
+.right {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 100;
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+    background-color: #5e6161;
+}
+
+.border img {
+    position: fixed;
+    left: 0px;
+    top: 9px;
+    right: 0px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo img {
+    font-size: 14px;
+    width: 147px;
+    margin-top: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.we-do-love-care {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    line-height: 32px;
+    grid-gap: 48px;
+    padding: 80px;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-weight: 300;
+}
+
+.we-do-love-care h2 {
+    text-align: left;
+    color: rgb(51, 51, 51);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.members {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    line-height: 32px;
+    grid-gap: 16px;
+    padding: 80px;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-weight: 300;
+}
+
+.people h2 {
+    color: rgb(51, 51, 51);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.people img {
+    border: 5px solid #333;
+    width: 200px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.people span img {
+    border: none;
+    /* font-size: 14px; */
+    width: 30px;
+}
+
+.people a {
+    padding: 16px;
+    color: #333;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+.call {
+    padding-left: 48px;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    text-align: left;
+}
+
+.mail {
+    padding-left: 48px;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    text-align: left;
+}
+
+.linkedin {
+    padding-left: 48px;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    text-align: left;
+}
+
+.clientsnames {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    justify-content: center;
+}
+
+.clients img {
+    width: 200px;
+}
+
+.clients {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.clients h2 {
+    color: rgb(51, 51, 51);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.return button {
+    width: 20%;
+    height: 60px;
+    margin: 80px auto 40px;
+    border: 5px solid #5e6161;
+    background-color: transparent;
+    color: #5e6161;
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.return button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #5e6161;
+}
+
+.back img {
+    position: fixed;   
+    width: 32px;
+    position: fixed;
+    right: 35px;
+    bottom: 30px;
+}

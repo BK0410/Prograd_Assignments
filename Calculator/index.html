@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="display">
+            <button id="operator" onclick="clr()">C</button>
+            <button id="operator" onclick="del()">←</button>
+            <button id="operator" onclick="display('%')">%</button>
+            <button id="operator" onclick="display('/')">/</button>
+            <button onclick="display(7)">7</button>
+            <button onclick="display(8)">8</button>
+            <button onclick="display(9)">9</button>
+            <button id="operator" onclick="display('*')">x</button>
+            <button onclick="display(4)">4</button>
+            <button onclick="display(5)">5</button>
+            <button onclick="display(6)">6</button>
+            <button id="operator" onclick="display('-')">-</button>
+            <button onclick="display(1)">1</button>
+            <button onclick="display(2)">2</button>
+            <button onclick="display(3)">3</button>
+            <button id="operator" onclick="display('+')">+</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="display(0)">0</button>
+            <button id="equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script>
+        let output = document.getElementById("display");
+
+        function display(n) {
+            output.value = output.value + n;
+        }
+
+        function calculate() {
+            try {
+                output.value = eval(output.value);
+                if(output.value == 'Infinity'){
+                    output.value = '∞';
+                }
+                if(output.value == 'undefined'){
+                    output.value = '';
+                }
+                
+            }
+            catch (Exception) {
+                alert("Invalid input...!");
+                output.value = '';
+            }
+        }
+
+        function clr() {
+            output.value = '';
+        }
+
+        function del() {
+            output.value = output.value.slice(0, -1);
+        }
+    </script>
+
+</body>
+
+</html>

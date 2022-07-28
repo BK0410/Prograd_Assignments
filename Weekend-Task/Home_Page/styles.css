@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 48.5vh 48.5vh;
+    color: #fff;
+}
+
+.sections h1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.topleft {
+    background-color: #556270;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.topleft:hover{
+    background-color: #353d47;
+}
+
+.topright {
+    background-color: #4ecdc4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.topright:hover{
+    background-color: #368d87;
+}
+
+.bottomleft {
+    background-color: #c7f464;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.bottomleft:hover{
+    background-color: #93b44a;
+}
+
+.bottomright {
+    background-color: #ff6b6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.bottomright:hover{
+    background-color:  #bf5050;
+}
+
+.logo img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    margin: auto;
+    padding-left: 0px;
+    width: 174px;
+}
+
+.border {
+    line-height: 9.5px;
+}
+
+.top {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #5e6161;
+}
+
+.bottom {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background-color: #5e6161;
+}
+
+.left {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 100;
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+    background-color: #5e6161;
+}
+
+.right {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 100;
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+    background-color: #5e6161;
+}
+
+.border img {
+    position: fixed;
+    left: 0px;
+    top: 9px;
+    right: 0px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
